@@ -1,4 +1,4 @@
-
+<html>
   <head>
     <title>JavaScript Sankey Diagram</title>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
@@ -21,29 +21,60 @@ anychart.onDocumentReady(function () {
   
 
 
-           //states within couth sudan 
-          {from: "Jonglei ", to: "Bor", value: 243989},
-          {from: "Western Equatoria", to: "Yambio", value: 68624},
-          {from: "Central Equatoria", to: "Juba", value: 234636},
-          {from: "Eastern Equatoria", to: "Torit", value: 49511},
-          {from: "Unity", to: "Bentiu", value: 196666},
-          {from: "Upper Nile ", to: "Malakal", value: 219012},
-          {from: "Lakes", to: "Rumbek", value: 186983},
-          {from: "Warrap", to: "Kuacjok", value: 287355},
-          {from: "Western Bahr el Ghazal", to: "Wau", value: 64096},
-          {from: "Northen Bahr el Ghazal", to: "Aweil", value: 64893},
+           //states within south sudan 
+          {from: "Jonglei ", to: "Refugees", value: 243989},
+          {from: "Jonglei ", to: "Returnees", value: 19227},
+          {from: "Jonglei ", to: "IDP", value: 243989},
+
+          {from: "Western Equatoria", to: "Refugees", value: 68624},
+          {from: "Western Equatoria", to: "Returnees", value: 68624},
+          {from: "Western Equatoria", to: "IDP", value: 68624},
+
+          {from: "Central Equatoria", to: "Refugees", value: 25141},
+          {from: "Central Equatoria", to: "Returnees", value: 234636},
+          {from: "Central Equatoria", to: "IDP", value: 234636},
+
+          {from: "Eastern Equatoria", to: "Refugees", value: 49511},
+          {from: "Eastern Equatoria", to: "Returnees", value: 49511},
+          {from: "Eastern Equatoria", to: "IDP", value: 49511},
+
+          {from: "Unity", to: "Refugees", value: 196666},
+          {from: "Unity", to: "Returnees", value: 196666},
+          {from: "Unity", to: "IDP", value: 196666},
+
+          {from: "Upper Nile ", to: "Refugees", value: 139959},
+          {from: "Upper Nile ", to: "Returnees", value: 349422},
+          {from: "Upper Nile ", to: "IDP", value: 219012},
+
+
+          {from: "Lakes", to: "Refugees", value: 120},
+          {from: "Lakes", to: "Returnees", value: 186983},
+          {from: "Lakes", to: "IDP", value: 186983},
+
+          {from: "Warrap", to: "Refugees", value: 258},
+          {from: "Warrap", to: "Returnees", value: 12578},
+          {from: "Warrap", to: "IDP", value: 287355},
+
+          {from: "Western Bahr el Ghazal", to: "Refugees", value: 3493},
+          {from: "Western Bahr el Ghazal", to: "Returnees", value: 30095},
+          {from: "Western Bahr el Ghazal", to: "IDP", value: 64096},
+
+          {from: "Northen Bahr el Ghazal", to: "Refugees", value: 9159},
+          {from: "Northen Bahr el Ghazal", to: "Returnees", value: 54188},
+          {from: "Northen Bahr el Ghazal", to: "IDP", value: 64893},
+
 
           //capital cities
 
-          {from: "Bor", to: "Refugees", value: 1000000},
+          {from: "Bor", to:  "Refugees", value: 2448480},
           {from: "Bor", to: "Returnees", value: 38403},
           {from: "Bor", to: "IDP", value: 98057},
 
-          {from: "Yambio", to: "Refugees", value: 15681},
+          {from: "Yambio", to: " Refugees", value: 15681},
           {from: "Yambio", to: "Returnees", value: 17050},
           {from: "Yambio", to: "IDP", value: 85305},
 
-          {from: "Juba", to: "Refugees", value: 38377},
+          {from: "Juba", to: "Refugees", value: 25141},
           {from: "Juba", to: "Returnees", value: 333538},
           {from: "Juba", to: "IDP", value: 301538},
 
@@ -69,34 +100,20 @@ anychart.onDocumentReady(function () {
           {from: "Wau", to: "IDP", value: 29428},
 
           {from: "Aweil", to: "Refugees", value: 13192},
-          {from: "Aweil", to: "Returneeszx", value: 59586},
+          {from: "Aweil", to: "Returnees", value: 59586},
           {from: "Aweil", to: "IDP", value: 32023},
 
            //types of population groups 
-           {from: "Refugees", to: "male", value: 7000},
-          {from: "Refugees", to: "female", value: 9000},
-          {from: "Returnees", to: "male", value: 1364},
-          {from: "Returnees", to: "female", value: 2000},
-          {from: "IDP", to: "male", value: 1364},
-          {from: "IDP", to: "female", value: 1364},
           
           
 
            //gender 
-           {from: "Female", to: "Survived", value: 344},
-          {from: "Female", to: "Perished", value: 126},
-          {from: "Male", to: "Survived", value: 367},
-          {from: "Male", to: "Perished", value: 1364},
+           
+          
 
 
           //types of population groups 
-          {from: "male", to: "Survived", value: 367},
-          {from: "male", to: "Perished", value: 1364},
-          {from: "male", to: "Perished", value: 1364},
-
-          {from: "female", to: "Survived", value: 367},
-          {from: "female", to: "Perished", value: 1364},
-          {from: "female", to: "Perished", value: 1364},
+         
 
         ];
   // create a sankey diagram instance
